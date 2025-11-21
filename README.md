@@ -1,10 +1,8 @@
 # Open Agent Exchange Protocol (OAEP) Specification
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-0.1%20(Draft)-blue.svg" alt="Specification v0.1 (Draft)">
-  <img src="https://img.shields.io/badge/Status-Public%20Draft%20for%20Discussion-orange.svg" alt="Status: Public Draft for Discussion">
-  <img src="https://img.shields.io/badge/Layer-0%20(Trust%20Foundation)-lightgrey.svg" alt="Layer 0 (Trust Foundation)">
-</p>
+[![Specification v0.1 (Draft)](https://img.shields.io/badge/Version-0.1%20(Draft)-blue.svg)](https://github.com/oap-foundation/oaep-spec/blob/main/specification/v0.1.md)
+[![Status: Public Draft for Discussion](https://img.shields.io/badge/Status-Public%20Draft%20for%20Discussion-orange.svg)](https://github.com/oap-foundation/oaep-spec/discussions)
+[![Layer 0 (Trust Foundation)](https://img.shields.io/badge/Layer-0%20(Trust%20Foundation)-lightgrey.svg)](https://github.com/oap-foundation/oap-framework)
 
 This repository contains the official technical specification for the **Open Agent Exchange Protocol (OAEP)**.
 
@@ -30,13 +28,22 @@ OAEP standardizes the essential primitives of digital trust:
 The full technical specification is a work in progress and is being developed in this repository.
 
 > **➡️ [Read the full OAEP v0.1 Specification (Draft)](/specification/v0.1.md)**
-> *(Note: The spec itself should be a separate, more detailed markdown file within this repo, for example in a `/specification` folder.)*
+> *(Note: The spec itself is located in the `/specification` folder.)*
 
 This document details:
 *   The core data objects (like `AgentProfile`).
 *   The step-by-step sequence of the connection handshake.
 *   The required DID methods and Verifiable Credential structures.
 *   The standard for key management and revocation (`StatusList2021`).
+
+## Reference Implementations
+
+To help developers build compliant agents, we provide official reference implementations of the protocol.
+
+### PHP
+*   **[oap-foundation/oaep-php](https://github.com/oap-foundation/oaep-php)**
+    *   The first reference implementation of OAEP v0.1.
+    *   Includes support for DID generation, Verifiable Credentials, and the full handshake process.
 
 ## Status: Public Draft for Discussion
 
